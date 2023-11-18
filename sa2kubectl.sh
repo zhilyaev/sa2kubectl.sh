@@ -2,14 +2,14 @@
 
 set -o errexit
 
-# cosmetic name
-cluster='prod'
 
-# settings
-server=<server address>
-secret=<sa-secret>
-sa=<app-role>
-ns=<sa-ns>
+
+# settings:
+# cluster='prod' # cosmetic name
+# server=<server address>
+# secret=<sa-secret>
+# sa=<app-role>
+# ns=<sa-ns>
 
 
 ca=$(kubectl get secret $secret -o=jsonpath='{.data.ca\.crt}')
